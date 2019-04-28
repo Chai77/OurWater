@@ -9,7 +9,14 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import java.io.IOException;
+
+import AI.Func;
+
 public class MainActivity extends AppCompatActivity {
+
+    public MainActivity() throws IOException {
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,4 +56,7 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    Func f = new Func();
+
 }
