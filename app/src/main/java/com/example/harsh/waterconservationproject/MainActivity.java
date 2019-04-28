@@ -11,7 +11,14 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 
+import java.io.IOException;
+
+import AI.Func;
+
 public class MainActivity extends AppCompatActivity {
+
+    public MainActivity() throws IOException {
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,15 +30,13 @@ public class MainActivity extends AppCompatActivity {
         configureSigninButton();
     }
 
+<<<<<<< HEAD
     private void configureCreateButton(){
         Button nextButton = (Button) findViewById(R.id.create);
         nextButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, CreateActivity.class));
-            }
-        });
-    }
+=======
+
+        
     private void configureSigninButton(){
         Button nextButton = (Button) findViewById(R.id.signin);
         nextButton.setOnClickListener(new View.OnClickListener() {
@@ -62,4 +67,7 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    Func f = new Func();
+
 }
