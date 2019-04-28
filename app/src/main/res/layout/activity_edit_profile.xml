@@ -78,7 +78,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="749dp"
+                android:layout_height="707dp"
                 android:background="@drawable/water"
                 android:focusable="true"
                 android:focusableInTouchMode="true"
@@ -103,12 +103,6 @@
                     android:id="@+id/tv_author"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
-
-                <View
-                    android:id="@+id/divider2"
-                    android:layout_width="match_parent"
-                    android:layout_height="56dp"
-                    android:background="?android:attr/listDivider" />
 
                 <LinearLayout
                     android:id="@+id/ll_action"
@@ -181,63 +175,93 @@
                 </RelativeLayout>
 
                 <TextView
-                    android:id="@+id/tv_desc"
-                    android:layout_width="387dp"
-                    android:layout_height="97dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:background="#BCA5EE"
                     android:fontFamily="sans-serif-condensed-medium"
-                    android:gravity="center_horizontal"
-                    android:text="Welcome to WaterWidget, an app that lets you track your water usage and related information while also allowing you to track your conservation and compete in your neighborhood."
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-
-                <View
-                    android:id="@+id/divider3"
-                    android:layout_width="match_parent"
-                    android:layout_height="114dp"
-                    android:background="?android:attr/listDivider" />
-
-                <Button
-                    android:id="@+id/create"
-                    android:layout_width="364dp"
-                    android:layout_height="137dp"
-                    android:layout_centerHorizontal="true"
-                    android:layout_gravity="center"
-                    android:background="@color/colorAccent"
-                    android:clickable="true"
-                    android:fontFamily="sans-serif-condensed-medium"
-                    android:gravity="center"
-                    android:text="Create Account"
-                    android:textAlignment="center"
+                    android:text="Edit Account"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                    android:textSize="24sp"
-                    tools:text="Create Account" />
+                    android:textSize="24sp" />
 
                 <View
-                    android:id="@+id/divider"
+                    android:id="@+id/divider2"
                     android:layout_width="match_parent"
-                    android:layout_height="123dp"
+                    android:layout_height="49dp"
+                    android:layout_alignParentStart="true"
+                    android:background="?android:attr/listDivider" />
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#CDDC39"
+                    android:ems="10"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:inputType="textPersonName"
+                    android:text="Name" />
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#B6C43E"
+                    android:ems="10"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:inputType="textPersonName"
+                    android:text="Number of Family Members" />
+
+                <EditText
+                    android:id="@+id/editText3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#8FC453"
+                    android:ems="10"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:inputType="textPersonName"
+                    android:text="Average Time to Shower" />
+
+                <EditText
+                    android:id="@+id/editText4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#65B669"
+                    android:ems="10"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:inputType="textPersonName"
+                    android:text="Total Water Consumption" />
+
+                <View
+                    android:id="@+id/divider1"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
                     android:background="?android:attr/listDivider" />
 
                 <Button
-                    android:id="@+id/signin"
-                    android:layout_width="364dp"
-                    android:layout_height="137dp"
-                    android:layout_centerHorizontal="true"
-                    android:background="@color/colorAccent"
+                    android:id="@+id/submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-condensed-medium"
-                    android:foregroundGravity="center"
-                    android:gravity="center"
-                    android:text="Sign In"
-                    android:textAlignment="center"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                    android:text="Submit" />
 
                 <ImageView
                     android:id="@+id/imageView"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_alignParentStart="true"
                     app:srcCompat="?attr/dividerHorizontal" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="#B0EEA5"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="This information will help us determine the amount of water you generally use, and will form a platform for future data. Please anwer truthfully for optimal results."
+                    android:textSize="14sp" />
 
             </LinearLayout>
         </FrameLayout>
@@ -251,20 +275,25 @@
         android:background="?android:attr/listDivider" />
 
     <View
-        android:id="@+id/divider8"
+        android:id="@+id/divider5"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="?android:attr/listDivider" />
 
     <View
-        android:id="@+id/divider9"
+        android:id="@+id/divider6"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="?android:attr/listDivider" />
 
-    <View
-        android:id="@+id/divider10"
+    <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="?android:attr/listDivider" />
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go Back" />
+
 </android.support.design.widget.CoordinatorLayout>

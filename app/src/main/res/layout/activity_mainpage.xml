@@ -78,13 +78,21 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="749dp"
+                android:layout_height="wrap_content"
                 android:background="@drawable/water"
                 android:focusable="true"
                 android:focusableInTouchMode="true"
                 android:gravity="center"
                 android:orientation="vertical"
                 android:textAlignment="gravity">
+
+                <View
+                    android:id="@+id/divider7"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="?android:attr/listDivider" />
 
                 <TextView
                     android:id="@+id/tv_recipe_name"
@@ -103,12 +111,6 @@
                     android:id="@+id/tv_author"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
-
-                <View
-                    android:id="@+id/divider2"
-                    android:layout_width="match_parent"
-                    android:layout_height="56dp"
-                    android:background="?android:attr/listDivider" />
 
                 <LinearLayout
                     android:id="@+id/ll_action"
@@ -181,62 +183,116 @@
                 </RelativeLayout>
 
                 <TextView
-                    android:id="@+id/tv_desc"
-                    android:layout_width="387dp"
-                    android:layout_height="97dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="73dp"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:background="#BCA5EE"
                     android:fontFamily="sans-serif-condensed-medium"
                     android:gravity="center_horizontal"
-                    android:text="Welcome to WaterWidget, an app that lets you track your water usage and related information while also allowing you to track your conservation and compete in your neighborhood."
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                    android:text="100"
+                    android:textSize="52sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="31dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="#BCA5EE"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:gravity="center_horizontal"
+                    android:text=" gallons of water were used in your house." />
+
+                <View
+                    android:id="@+id/divider2"
+                    android:layout_width="match_parent"
+                    android:layout_height="87dp"
+                    android:layout_alignParentStart="true"
+                    android:background="?android:attr/listDivider" />
+
+                <TextView
+                    android:id="@+id/tv_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="#BCA5EE"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:gravity="center_horizontal"
+                    android:text="See below to track your progress towards your conservation goal, as well as your current rank in the leaderboard." />
 
                 <View
                     android:id="@+id/divider3"
                     android:layout_width="match_parent"
-                    android:layout_height="114dp"
+                    android:layout_height="37dp"
                     android:background="?android:attr/listDivider" />
 
                 <Button
-                    android:id="@+id/create"
+                    android:id="@+id/progress"
                     android:layout_width="364dp"
-                    android:layout_height="137dp"
+                    android:layout_height="80dp"
                     android:layout_centerHorizontal="true"
                     android:layout_gravity="center"
                     android:background="@color/colorAccent"
                     android:clickable="true"
                     android:fontFamily="sans-serif-condensed-medium"
                     android:gravity="center"
-                    android:text="Create Account"
+                    android:text="Progress"
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
                     android:textSize="24sp"
-                    tools:text="Create Account" />
+                    tools:text="Progress" />
+
+                <View
+                    android:id="@+id/divider1"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="?android:attr/listDivider" />
+
+                <Button
+                    android:id="@+id/leader"
+                    android:layout_width="364dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:background="@color/colorAccent"
+                    android:clickable="true"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:gravity="center"
+                    android:text="Leaderboard"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textSize="24sp"
+                    tools:text="Leaderboard" />
 
                 <View
                     android:id="@+id/divider"
                     android:layout_width="match_parent"
-                    android:layout_height="123dp"
+                    android:layout_height="48dp"
                     android:background="?android:attr/listDivider" />
 
                 <Button
-                    android:id="@+id/signin"
+                    android:id="@+id/edit"
                     android:layout_width="364dp"
-                    android:layout_height="137dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentStart="true"
                     android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
                     android:background="@color/colorAccent"
+                    android:clickable="true"
                     android:fontFamily="sans-serif-condensed-medium"
-                    android:foregroundGravity="center"
                     android:gravity="center"
-                    android:text="Sign In"
+                    android:text="Edit Profile"
                     android:textAlignment="center"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textSize="24sp"
+                    tools:text="Edit Profile" />
 
                 <ImageView
                     android:id="@+id/imageView"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_alignParentStart="true"
                     app:srcCompat="?attr/dividerHorizontal" />
 
             </LinearLayout>
@@ -251,20 +307,15 @@
         android:background="?android:attr/listDivider" />
 
     <View
-        android:id="@+id/divider8"
+        android:id="@+id/divider5"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="?android:attr/listDivider" />
 
     <View
-        android:id="@+id/divider9"
+        android:id="@+id/divider6"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="?android:attr/listDivider" />
 
-    <View
-        android:id="@+id/divider10"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="?android:attr/listDivider" />
 </android.support.design.widget.CoordinatorLayout>
