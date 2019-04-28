@@ -24,7 +24,7 @@ public class HomeActivity extends AppCompatActivity {
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //startActivity(new Intent(HomeActivity.this, ProgressActivity.class));
+                startActivity(new Intent(HomeActivity.this, ProgressActivity.class));
             }
         });
     }

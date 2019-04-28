@@ -22,7 +22,6 @@ public class Func {
             double x = scan.nextDouble();
             double y = scan.nextDouble();
             b = ((b) + (y / x * count)) / count;
-            System.out.println(b);
         }
     }
 }
